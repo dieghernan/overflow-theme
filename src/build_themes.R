@@ -3,16 +3,6 @@
 library(tidyverse)
 tminput <- "./extras/textmate/StackOverflow Dark.tmTheme"
 
-# # Beautify tmTheme
-# readLines(tminput) %>%
-#   gsub("  ", " ", .) %>%
-#   gsub("> ", ">", ., fixed = TRUE) %>%
-#   gsub(" <", "<", ., fixed = TRUE) %>%
-#   writeLines(tminput)
-#
-# xml2::read_xml(tminput) %>%
-#   xml2::write_xml(tminput)
-
 source("src/functions.R")
 
 # VScode -----

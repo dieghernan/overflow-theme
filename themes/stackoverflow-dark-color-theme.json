@@ -45,7 +45,6 @@
     {
       "name": "hljs-meta",
       "scope": [
-        "aaaaaa.review.d",
         "entity.name.tag.doctype.html",
         "keyword.control.flow.alias.yaml",
         "keyword.control.flow.anchor.yaml",
@@ -56,6 +55,7 @@
         "punctuation.section.embedded",
         "punctuation.section.embedded.begin.php",
         "punctuation.section.embedded.end.php",
+        "variable.other.alias.yaml",
         "variable.other.anchor.yaml"
       ],
       "settings": {
@@ -142,7 +142,10 @@
     },
     {
       "name": "hljs-string",
-      "scope": "string",
+      "scope": [
+        "keyword.other.directive.yaml",
+        "string"
+      ],
       "settings": {
         "foreground": "#B5BD68"
       }
@@ -157,7 +160,8 @@
     {
       "name": "hljs-symbol",
       "scope": [
-        "aaaaaa.review.a",
+        "constant.language.symbol",
+        "constant.other.reference.link.markdown",
         "constant.other.symbol"
       ],
       "settings": {
@@ -167,11 +171,11 @@
     {
       "name": "hljs-variable",
       "scope": [
-        "aaaaaa.review.b",
         "variable.language",
         "variable.language.this.php",
-        "variable.other",
+        "variable.other.constant",
         "variable.other.php",
+        "variable.other.readwrite.instance.ruby",
         "variable.scss"
       ],
       "settings": {
@@ -181,9 +185,8 @@
     {
       "name": "hljs-link",
       "scope": [
-        "aaaaaa.review.c",
         "markup.link",
-        "meta.link"
+        "markup.underline.link"
       ],
       "settings": {
         "foreground": "#B5BD68"
@@ -197,11 +200,8 @@
       }
     },
     {
-      "name": "hljs-built-in",
-      "scope": [
-        "aaaaaa.review.e",
-        "support.function"
-      ],
+      "name": "hljs-built_in",
+      "scope": "support.function",
       "settings": {
         "foreground": "#F08D49"
       }
@@ -209,8 +209,6 @@
     {
       "name": "hljs-title",
       "scope": [
-        "aaaaaa.review.f",
-        "entity.name.function",
         "entity.name.type",
         "support.class"
       ],
@@ -220,10 +218,7 @@
     },
     {
       "name": "hljs-literal",
-      "scope": [
-        "aaaaaa.review.g",
-        "constant.language"
-      ],
+      "scope": "constant.language",
       "settings": {
         "foreground": "#F08D49"
       }

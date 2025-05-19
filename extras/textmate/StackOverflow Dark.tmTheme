@@ -59,7 +59,7 @@
         <key>name</key>
         <string>hljs-meta</string>
         <key>scope</key>
-        <string>aaaaaa.review.d, entity.name.tag.doctype.html, keyword.control.flow.alias.yaml, keyword.control.flow.anchor.yaml, keyword.other.important, meta.doctype, meta.tag.metadata.doctype, meta.tag.metadata.doctype.html, punctuation.section.embedded, punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, variable.other.anchor.yaml</string>
+        <string>entity.name.tag.doctype.html, keyword.control.flow.alias.yaml, keyword.control.flow.anchor.yaml, keyword.other.important, meta.doctype, meta.tag.metadata.doctype, meta.tag.metadata.doctype.html, punctuation.section.embedded, punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, variable.other.alias.yaml, variable.other.anchor.yaml</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -169,7 +169,7 @@
         <key>name</key>
         <string>hljs-string</string>
         <key>scope</key>
-        <string>string</string>
+        <string>keyword.other.directive.yaml, string</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -191,7 +191,7 @@
         <key>name</key>
         <string>hljs-symbol</string>
         <key>scope</key>
-        <string>aaaaaa.review.a, constant.other.symbol</string>
+        <string>constant.language.symbol, constant.other.reference.link.markdown, constant.other.symbol</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -202,7 +202,7 @@
         <key>name</key>
         <string>hljs-variable</string>
         <key>scope</key>
-        <string>aaaaaa.review.b, variable.language, variable.language.this.php, variable.other, variable.other.php, variable.scss</string>
+        <string>variable.language, variable.language.this.php, variable.other.constant, variable.other.php, variable.other.readwrite.instance.ruby, variable.scss</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -213,7 +213,7 @@
         <key>name</key>
         <string>hljs-link</string>
         <key>scope</key>
-        <string>aaaaaa.review.c, markup.link, meta.link</string>
+        <string>markup.link, markup.underline.link</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -233,9 +233,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>hljs-built-in</string>
+        <string>hljs-built_in</string>
         <key>scope</key>
-        <string>aaaaaa.review.e, support.function</string>
+        <string>support.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -246,7 +246,7 @@
         <key>name</key>
         <string>hljs-title</string>
         <key>scope</key>
-        <string>aaaaaa.review.f, entity.name.function, entity.name.type, support.class</string>
+        <string>entity.name.type, support.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -257,7 +257,7 @@
         <key>name</key>
         <string>hljs-literal</string>
         <key>scope</key>
-        <string>aaaaaa.review.g, constant.language</string>
+        <string>constant.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
