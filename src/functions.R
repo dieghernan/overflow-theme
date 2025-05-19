@@ -154,22 +154,94 @@ read_tmtheme <- function(input) {
   end$background <- end$background
 
   
-  # Now get the token colors and re-arrange
-  tok <- end |> filter(section == "Scopes") |> 
+  # Now re-create the theme
+  # Settings
+  set <- end |> 
+    filter(section == "Top-level config") |> 
+    select(name, value)
+  
+  ll <- NULL
+  
+  for (i in seq_len(nrow(set))) {
+    this <- set[i, ]
+    tm <- this$name |> as.character()
+    col <- this$value |> as.character()
+    ll <- c(ll, list(key = list(tm), string = list(col)))
+  }
+  
+  # Fill the template
+  setting <- list(
+    dict = list(
+      key = list("settings"),
+      dict = ll
+    )
+  )
+  
+  # Now get the rest of params (token colors)
+tok <- end |> filter(section == "Scopes") |> 
     select(-section, -value) 
   
     tok$order <- seq_len(nrow(tok)) 
   
   tok_g <- tok |> 
     group_by(name, foreground, background, fontStyle) |> 
-    summarise(minr = min(order), allscopes = paste0(scope, collapse = ", ")) |> 
+    summarise(minr = min(order), scope = paste0(scope, collapse = ", ")) |> 
     arrange(minr) %>%
     select(-minr)
   
   ntok <- seq_len(nrow(tok_g))
-  
-  # TODO LOOP
-  
+  i <- 2
+  for (i in ntok) {
+    this <- tok_g[i,]
+    name <- unlist(this$name)
+    if (length(name) == 0) {
+      name <- ""
+    }
+    scope <- this$scope |>
+      strsplit(",") |> 
+      unlist() |> sort() |> 
+      paste0(collapse = ", ")
+    # message(i, " is ", scope)
+    # Settings are ok
+
+    onl <- list(
+      dict = list(
+        key = list("name"),
+        string = list(name),
+        key = list("scope"),
+        string = list(scope),
+        key = list("settings"),
+        dict = list()
+      )
+    )
+    
+    dictt <- NULL
+    settts <- unlist(sett)
+    if ("foreground" %in% names(settts)) {
+      dictt <- c(dictt, list(
+        key = list("foreground"),
+        string = settts["foreground"] |> unname() |> paste0(collapse = " ") |> list()
+      ))
+    }
+    if ("background" %in% names(settts)) {
+      dictt <- c(dictt, list(
+        key = list("background"),
+        string = settts["background"] |> unname() |> paste0(collapse = " ") |> list()
+      ))
+    }
+    if ("fontStyle" %in% names(settts)) {
+      dictt <- c(dictt, list(
+        key = list("fontStyle"),
+        string = settts["fontStyle"] |> unname() |> paste0(collapse = " ") |> list()
+      ))
+    }
+    
+    if (!is.null(dictt)) {
+      onl$dict$dict <- dictt
+      
+      setting <- c(setting, onl)
+    }
+  }  
   
   # Redo and clean XML
   xml2::as_xml_document(tmclean) |> 
