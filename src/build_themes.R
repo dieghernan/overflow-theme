@@ -5,11 +5,11 @@ tminput <- "./extras/textmate/StackOverflow Dark.tmTheme"
 
 # # Beautify tmTheme
 # readLines(tminput) %>%
-#   gsub("  ", " ", .) %>% 
+#   gsub("  ", " ", .) %>%
 #   gsub("> ", ">", ., fixed = TRUE) %>%
 #   gsub(" <", "<", ., fixed = TRUE) %>%
 #   writeLines(tminput)
-# 
+#
 # xml2::read_xml(tminput) %>%
 #   xml2::write_xml(tminput)
 

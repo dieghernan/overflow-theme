@@ -51,7 +51,7 @@
 }
 
 .ace_fold {
-  background-color: #6b72e6;
+  background-color: #F08D49;
   border-color: #FFFFFF;
 }
 
@@ -71,7 +71,19 @@
   color: #F08D49;
 }
 
+.ace_constant.ace_language {
+  color: #F08D49;
+}
+
 .ace_constant.ace_numeric {
+  color: #F08D49;
+}
+
+.ace_support.ace_function {
+  color: #F08D49;
+}
+
+.ace_support.ace_class {
   color: #F08D49;
 }
 
@@ -81,6 +93,10 @@
 
 .ace_storage.ace_type {
   color: #88AECE;
+}
+
+.ace_invalid {
+  color: #DE7176;
 }
 
 .ace_string {
@@ -96,10 +112,22 @@
 }
 
 .ace_variable {
-  color: #FFFFFF;
+  color: #F08D49;
+}
+
+.ace_variable.ace_language {
+  color: #B5BD68;
 }
 
 .ace_entity.ace_other.ace_attribute-name {
+  color: #88AECE;
+}
+
+.ace_entity.ace_name.ace_function {
+  color: #F08D49;
+}
+
+.ace_markup.ace_heading {
   color: #88AECE;
 }
 
@@ -194,7 +222,7 @@
 }
 
 .xtermBlur {
-  filter: brightness(75%);
+  filter: blur(1px);
 }
 
 .xtermUnderline {
@@ -2351,10 +2379,18 @@
   background: linear-gradient(to left, #dc91dbbb 1px, #dc91db77 1px, #dc91db77);
 }
 
-/* Generated and tested in RStudio 2025.05.0+496 ("Mariposa Orchid") */
+/* Generated and tested in RStudio 2024.04.2+764.pro1 ("Chocolate Cosmos") */
 /* Rules from tmTheme */
+.ace_constant {
+  color: #F08D49;
+}
+
 .ace_cursor {
   color: #F08D49;
+}
+
+.ace_heading {
+  color: #88AECE;
 }
 
 .ace_print-margin {
