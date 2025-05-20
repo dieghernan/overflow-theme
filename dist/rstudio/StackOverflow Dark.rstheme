@@ -120,7 +120,11 @@
 }
 
 .ace_entity.ace_other.ace_attribute-name {
+<<<<<<< HEAD:dist/rstudio/StackOverflow Dark.rstheme
   color: #90C4F9;
+=======
+  color: #88AECE;
+>>>>>>> main:extras/rstudio/StackOverflow Dark.rstheme
 }
 
 .ace_markup.ace_heading {
@@ -218,7 +222,7 @@
 }
 
 .xtermBlur {
-  filter: blur(1px);
+  filter: brightness(75%);
 }
 
 .xtermUnderline {
@@ -2375,10 +2379,14 @@
   background: linear-gradient(to left, #dc91dbbb 1px, #dc91db77 1px, #dc91db77);
 }
 
-/* Generated and tested in RStudio 2024.04.2+764.pro1 ("Chocolate Cosmos") */
+/* Generated and tested in RStudio 2025.05.0+496 ("Mariposa Orchid") */
 /* Rules from tmTheme */
 .ace_constant {
+<<<<<<< HEAD:dist/rstudio/StackOverflow Dark.rstheme
   color: #B6BE6A;
+=======
+  color: #B5BD68;
+>>>>>>> main:extras/rstudio/StackOverflow Dark.rstheme
 }
 
 .ace_cursor {
