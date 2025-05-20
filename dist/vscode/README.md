@@ -3,7 +3,8 @@
 ![Overflow Theme
 Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/banner.png)
 
-Dark and light syntax themes with orange accents, inspired by Stack Overflow.
+Dark, light and high contrast syntax themes with orange accents, inspired by
+Stack Overflow.
 
 --------------------------------------------------------------------------------
 
@@ -61,3 +62,4 @@ following editors and syntax highlighting libraries:
 -   **Pygments** (compatible with **Jekyll** static site generator)
 -   **highlight.js**
 -   **Prism.js**
+

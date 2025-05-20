@@ -28,7 +28,6 @@ myvs <- list.files("./dist/vscode/themes", full.names = TRUE)
 the_df <- lapply(myvs, function(x) {
   js <- read_json(x)
   tibble::tibble(
-    id = js$name,
     label = js$name,
     uiTheme = case_when(
       str_detect(js$type, "hc") ~ js$type,
@@ -41,9 +40,7 @@ the_df <- lapply(myvs, function(x) {
   bind_rows() %>%
   mutate(ord = toupper(label)) |>
   arrange(ord) |>
-  select(-ord) %>%
-  mutate(id = str_replace_all(id, " ", "-") %>% tolower())
-
+  select(-ord)
 
 tm <- list()
 

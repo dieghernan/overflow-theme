@@ -4,7 +4,7 @@
   "description": "Visual Studio Code theme based on StackOverflow palette",
   "publisher": "dieghernan",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "maintainers": [
     "dieghernan"
   ],
@@ -32,8 +32,8 @@
   ],
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#2B2836",
-    "theme": "dark"
+    "color": "#F6F6F6",
+    "theme": "light"
   },
   "badges": [
     {
@@ -50,25 +50,21 @@
   "contributes": {
     "themes": [
       {
-        "id": "overflow-dark",
         "label": "Overflow Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/overflow-dark-color-theme.json"
       },
       {
-        "id": "overflow-dark-high-contrast",
         "label": "Overflow Dark High Contrast",
         "uiTheme": "hc-black",
         "path": "./themes/overflow-dark-high-contrast-color-theme.json"
       },
       {
-        "id": "overflow-light",
         "label": "Overflow Light",
         "uiTheme": "vs",
         "path": "./themes/overflow-light-color-theme.json"
       },
       {
-        "id": "overflow-light-high-contrast",
         "label": "Overflow Light High Contrast",
         "uiTheme": "hc-light",
         "path": "./themes/overflow-light-high-contrast-color-theme.json"

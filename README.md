@@ -1,12 +1,16 @@
 # Overflow Theme
 
+[![Preview in
+vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/dieghernan.oveflow-theme/Overflow%20Light)
+
 ![Overflow Theme
 Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/banner.png)
 
 Dark and light syntax themes with orange accents, inspired by Stack Overflow.
 Available for:
 
--   **Visual Studio Code**
+-   **Visual Studio Code** (view in [Visual Studio
+    Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.oveflow-theme))
 -   **RStudio**
 -   **TextMate/Sublime**
 -   **Pygments** (compatible with the **Jekyll** static site generator)
@@ -47,4 +51,3 @@ Available for:
 ## Overflow Light High Contrast
 
 ![Light-HC](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-light-hc.png)
-
