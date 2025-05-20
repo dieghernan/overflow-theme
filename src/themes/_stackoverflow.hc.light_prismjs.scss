@@ -1,0 +1,67 @@
+/* stackoverflow.hc.light */
+
+// Sources: 
+// Code: https://github.com/StackExchange/Stacks/blob/v2.7.5/lib/components/code-block/code-block.less
+// Colors: https://github.com/StackExchange/Stacks/blob/v2.7.5/lib/exports/color-sets.less
+// Updated: 2025-05-20
+
+
+$highlight-addition: #0A4324;
+$highlight-attribute: #004AB2;
+$highlight-bg: #F6F6F6;
+$highlight-color: #0C0C0E;
+$highlight-comment: #4E545A;
+$highlight-deletion: #9C2121;
+$highlight-keyword: #004AB2;
+$highlight-literal: #992C05;
+$highlight-namespace: #992C05;
+$highlight-punctuation: #3B4045;
+$highlight-symbol: #732B68;
+$highlight-variable: #315C00;
+$selection: #E6E6E6;
+
+
+$foreground: $highlight-color;
+$background: $highlight-bg;
+$highlight: $selection;
+$comment: $highlight-comment; // hljs: comment
+$constant_character_escape: $foreground; // hljs: char.escape
+$constant_language: $highlight-literal; // hljs: literal
+$constant_numeric: $highlight-literal; // hljs: number
+$constant_other_symbol: $highlight-variable; // hljs: symbol 
+$entity_name: $foreground; // hljs: function, class
+$entity_name_tag: $highlight-literal; // hljs: tag, name
+$entity_name_tag_css: $highlight-attribute;// hljs: selector-tag, selector-class
+$entity_other_attribute-name_html: $highlight-attribute; // hljs: attr
+$entity_other_attribute-name_id:$highlight-literal; // hljs: selector-id
+$invalid: $highlight-deletion; // hljs: deletion
+$keyword_control: $highlight-keyword; // hljs: keyword
+$keyword_other_important: $highlight-keyword; // hljs: meta
+$keyword_control_at-rule: $highlight-keyword;// attr on yaml
+$keyword_operator: $foreground;  // hljs: operator
+$markup_bold: $foreground; // hljs: strong
+$markup_italic: $foreground; // hljs: emphasis
+$markup_heading: $highlight-keyword; // hljs: section
+$markup_quote: $highlight-literal; // hljs: quote
+$markup_raw: $highlight-punctuation; // hljs: code
+$punctuation_definition: $foreground; // hljs: punctuation
+$storage_type: $keyword_control; // Prismjs: keyword
+$string: $highlight-variable; // hljs: string
+$string_html: $string; // hljs: string for html only
+$string_regexp: $highlight-variable; // hljs: regexp
+$support_constant:  $foreground; // hljs: property
+$support_type: $highlight-symbol; // hljs: attribute
+$variable: $highlight-variable; // hljs: variable
+$variable_language: $variable; // hljs: variable language and constant
+
+.token.list.punctuation {
+  color: $highlight-punctuation; // hljs: bullet
+}
+
+// Special for json
+.language-json {
+  .token.property {color: $entity_other_attribute-name_html;}
+}
+
+@import "./src/prismjs.scss"
+

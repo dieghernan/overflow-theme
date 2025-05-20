@@ -1,0 +1,111 @@
+/* stackoverflow.hc.light */
+
+// Sources: 
+// Code: https://github.com/StackExchange/Stacks/blob/v2.7.5/lib/components/code-block/code-block.less
+// Colors: https://github.com/StackExchange/Stacks/blob/v2.7.5/lib/exports/color-sets.less
+// Updated: 2025-05-20
+
+
+$highlight-addition: #0A4324;
+$highlight-attribute: #004AB2;
+$highlight-bg: #F6F6F6;
+$highlight-color: #0C0C0E;
+$highlight-comment: #4E545A;
+$highlight-deletion: #9C2121;
+$highlight-keyword: #004AB2;
+$highlight-literal: #992C05;
+$highlight-namespace: #992C05;
+$highlight-punctuation: #3B4045;
+$highlight-symbol: #732B68;
+$highlight-variable: #315C00;
+$selection: #E6E6E6;
+
+
+pre code.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 1em;
+}
+
+code.hljs {
+	padding: 3px 5px;
+}
+
+.hljs {
+	background-color: $highlight-bg;
+	color: $highlight-color;
+}
+
+.hljs-built_in,
+.hljs-literal,
+.hljs-title {
+	color: $highlight-literal;
+}
+
+.hljs-bullet,
+.hljs-code {
+	color: $highlight-punctuation;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta-keyword,
+.hljs-meta,
+.hljs-section,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-selector-tag {
+	color: $highlight-keyword;
+}
+
+.hljs-name,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-id,
+.hljs-template-tag,
+.hljs-type {
+	color: $highlight-namespace;
+}
+
+.hljs-link,
+.hljs-meta-string,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-string,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+	color: $highlight-variable;
+}
+
+.hljs-addition {
+	color: $highlight-addition;
+}
+
+.hljs-attr {
+	color: $highlight-attribute;
+}
+
+.hljs-attribute {
+	color: $highlight-symbol;
+}
+
+.hljs-comment {
+	color: $highlight-comment;
+}
+
+.hljs-deletion {
+	color: $highlight-deletion;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+
+.hljs-subst {
+	color: $highlight-color;
+}

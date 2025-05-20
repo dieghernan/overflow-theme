@@ -1,0 +1,78 @@
+{
+  "name": "so-themes",
+  "displayName": "SOverflow Theme",
+  "description": "VS Code theme based on StackOverflow",
+  "publisher": "dieghernan",
+  "license": "MIT",
+  "version": "0.1.3",
+  "maintainers": [
+    "dieghernan"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dieghernan/so-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dieghernan/so-theme/issues"
+  },
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "sponsor": {
+    "url": "https://github.com/dieghernan/so-theme?sponsor=1"
+  },
+  "keywords": [
+    "stackoverflow",
+    "theme",
+    "dark-theme",
+    "color-theme"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#2B2836",
+    "theme": "dark"
+  },
+  "badges": [
+    {
+      "url": "https://img.shields.io/github/license/dieghernan/so-theme",
+      "href": "https://github.com/dieghernan/so-theme/blob/main/LICENSE",
+      "description": "MIT License"
+    },
+    {
+      "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg",
+      "href": "https://github.com/dieghernan/so-theme/pulls",
+      "description": "PRs Welcome"
+    }
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "id": "stackoverflow-dark",
+        "label": "StackOverflow Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stackoverflow-dark-color-theme.json"
+      },
+      {
+        "id": "stackoverflow-high-contrast-dark",
+        "label": "StackOverflow High Contrast Dark",
+        "uiTheme": "hc-black",
+        "path": "./themes/stackoverflow-high-contrast-dark-color-theme.json"
+      },
+      {
+        "id": "stackoverflow-high-contrast-light",
+        "label": "StackOverflow High Contrast Light",
+        "uiTheme": "hc-light",
+        "path": "./themes/stackoverflow-high-contrast-light-color-theme.json"
+      },
+      {
+        "id": "stackoverflow-light",
+        "label": "StackOverflow Light",
+        "uiTheme": "vs",
+        "path": "./themes/stackoverflow-light-color-theme.json"
+      }
+    ]
+  }
+}
