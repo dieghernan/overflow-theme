@@ -1,9 +1,9 @@
-# Skeletor Syntax
+# Overflow Theme
 
 [![Preview in
 vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/dieghernan.skeletor-syntax/Skeletor%20Syntax)
 
-![Skeletor Syntax
+![Overflow Theme
 Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/banner.png)
 
 A *dark* syntax theme with purple accents inspired by Skeletor from *He-Man and
@@ -23,17 +23,17 @@ Screenshot](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/ass
 Preferences:
 
 1.  Go to `Extensions`.
-2.  Search for `Skeletor Syntax` and install it.
-3.  Go to `Color Themes` and select `Skeletor Syntax` as the color theme.
+2.  Search for `Overflow Theme` and install it.
+3.  Go to `Color Themes` and select `Overflow Theme` as the color theme.
     Alternatively, press `CMD + Shift + P`, type `> color theme`, and choose
-    `Skeletor Syntax`.
+    `Overflow Theme`.
 
-See also Skeletor Syntax in the [VisualStudio
+See also Overflow Theme in the [VisualStudio
 Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.skeletor-syntax).
 
 ## Language Support
 
-The Skeletor Syntax theme supports `language-*` rules and is optimized for
+The Overflow Theme theme supports `language-*` rules and is optimized for
 various languages:
 
 -   **HTML**

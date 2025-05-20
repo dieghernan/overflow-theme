@@ -3,7 +3,7 @@ pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
 
 code.hljs { padding: 3px 5px; }
 
-.hljs { background-color: #1A1A1A; color: #0C0D0E; }
+.hljs { background-color: #1A1A1A; color: #FFFFFF; }
 
 .hljs-built_in, .hljs-literal, .hljs-title { color: #FCC36E; }
 
@@ -29,4 +29,4 @@ code.hljs { padding: 3px 5px; }
 
 .hljs-strong { font-weight: bold; }
 
-.hljs-subst { color: #0C0D0E; }
+.hljs-subst { color: #FFFFFF; }

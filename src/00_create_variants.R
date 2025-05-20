@@ -172,9 +172,10 @@ writeLines(new_r, output_r)
 
 ## Templates based on overflow.dark -----
 
-css_templates <- list.files("./src/themes", "css$",
+css_templates <- list.files("./src/themes/", "_overflow.dark_",
   full.names = TRUE
 )
+
 
 ### Dark HC ----
 
@@ -242,3 +243,4 @@ for (this_template in css_templates) {
 
   writeLines(new_css, output_f)
 }
+
