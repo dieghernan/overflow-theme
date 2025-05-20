@@ -1,0 +1,94 @@
+/* overflow.hc.dark */
+.token.list.punctuation { color: #FCFCFC; }
+
+.language-json .token.property { color: #C3E0EF; }
+
+/* Source: https://github.com/dieghernan/overflow-theme */
+code[class*="language-"], pre[class*="language-"] { color: #0C0D0E; background: #1A1A1A; text-shadow: none; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; }
+
+/* Code blocks */
+pre[class*="language-"] { background: #1A1A1A; border-radius: 0.5em; padding: 1em; margin: 0.5em 0; overflow: auto; height: auto; }
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] { background: #1A1A1A; }
+
+.token.atrule { color: #C3E0EF; }
+
+.token.attr-name { color: #C3E0EF; }
+
+.token.attr-value { color: #EFF1AC; }
+
+.token.blockquote.punctuation { color: #FCC36E; }
+
+.token.bold { color: #0C0D0E; font-weight: bold; }
+
+.token.boolean { color: #FCC36E; }
+
+.token.builtin { color: #0C0D0E; }
+
+.token.cdata { color: #FCFCFC; }
+
+.token.char { color: #EFF1AC; }
+
+.token.class-name { color: #0C0D0E; }
+
+.token.class { color: #C3E0EF; }
+
+.token.code, .token.code.keyword { color: #FCFCFC; }
+
+.token.comment { color: #FCFCFC; }
+
+.token.constant { color: #FCC36E; }
+
+.token.content { color: #EFF1AC; }
+
+.token.directive { color: #C3E0EF; }
+
+.token.doctype { color: #FCFCFC; }
+
+.token.entity { color: #EFF1AC; }
+
+.token.function { color: #0C0D0E; }
+
+.token.id { color: #FCC36E; }
+
+.token.important { color: #C3E0EF; font-weight: bold; }
+
+.token.italic { color: #0C0D0E; font-style: italic; }
+
+.token.keyword.null { color: #FCC36E; }
+
+.token.keyword { color: #C3E0EF; }
+
+.token.namespace { color: #0C0D0E; }
+
+.token.number { color: #FCC36E; }
+
+.token.operator { color: #0C0D0E; }
+
+.token.prolog { color: #FCFCFC; }
+
+.token.property { color: #E8CAE6; }
+
+.token.punctuation { color: #0C0D0E; }
+
+.token.regex { color: #EFF1AC; }
+
+.token.selector { color: #C3E0EF; }
+
+.token.string { color: #EFF1AC; }
+
+.token.tag { color: #FCC36E; }
+
+.token.title { color: #C3E0EF; }
+
+.token.variable { color: #EFF1AC; }
+
+code[class="language-css"] { color: #0C0D0E; }
+
+code[class="language-scss"] { color: #0C0D0E; }
+
+code[class="language-yaml"] { color: #EFF1AC; }
+
+.language-scss .token.variable, .language-css .token.variable { color: #EFF1AC; }
+
+.language-yaml { color: #EFF1AC; }

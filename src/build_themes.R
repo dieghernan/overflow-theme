@@ -69,9 +69,9 @@ pk$contributes$themes <- tm
 
 write_json(pk, thepak, pretty = TRUE, auto_unbox = TRUE)
 
-file.copy("CHANGELOG.md", "dist/vscode")
-file.copy("LICENSE", "dist/vscode")
-file.copy("assets/icon.png", "dist/vscode")
+file.copy("CHANGELOG.md", "dist/vscode", overwrite = TRUE)
+file.copy("LICENSE", "dist/vscode", overwrite = TRUE)
+file.copy("assets/icon.png", "dist/vscode", overwrite = TRUE)
 
 # Build css/scss distros ----
 

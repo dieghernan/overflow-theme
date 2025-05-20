@@ -1,14 +1,10 @@
-/* stackoverflow.dark */
+/* overflow.dark */
 .token.list.punctuation {
   color: #CCCCCC;
 }
 
 .language-json .token.property {
   color: #90C4F9;
-}
-
-.token.class-name {
-  color: #FB9D51 !important;
 }
 
 /* Source: https://github.com/dieghernan/so-theme */

@@ -1,4 +1,4 @@
-# Use StackOverflow Dark as template
+# Use Overflow Dark as template
 # Sources:
 # Code: https://github.com/StackExchange/Stacks/blob/v2.7.5/lib/components/code-block/code-block.less
 # Colors: https://github.com/StackExchange/Stacks/blob/v2.7.5/lib/exports/color-sets.less
@@ -55,8 +55,8 @@ ncols <- seq_len(nrow(tb))
 
 # 1. tmTheme distros ----
 
-## Templates based on stackoverflow.dark -----
-input_tm <- "dist/tmtheme/StackOverflow Dark.tmTheme"
+## Templates based on overflow.dark -----
+input_tm <- "dist/tmtheme/Overflow Dark.tmTheme"
 tm_lines <- readLines(input_tm)
 
 ### Dark HC ----
@@ -72,24 +72,24 @@ for (c in ncols) {
 
 # Rename and output
 new_tm <- gsub(
-  "dark.stackoverflow_dark",
-  "dark.stackoverflow_hc_dark", new_tm
+  "dark.overflow_dark",
+  "dark.overflow_hc_dark", new_tm
 )
 
-new_tm <- gsub("StackOverflow Dark", "StackOverflow High Contrast Dark", new_tm)
+new_tm <- gsub("Overflow Dark", "Overflow High Contrast Dark", new_tm)
 
-output_f <- gsub("StackOverflow Dark", "StackOverflow High Contrast Dark", input_tm)
+output_f <- gsub("Overflow Dark", "Overflow High Contrast Dark", input_tm)
 
 writeLines(new_tm, output_f)
 
 
 
 # Create also a new R script
-input_r <- "./src/01_so.dark_guis.R"
+input_r <- "./src/01_overflow.dark_guis.R"
 r_lines <- readLines(input_r)
-new_r <- gsub("StackOverflow Dark", "StackOverflow High Contrast Dark", r_lines)
+new_r <- gsub("Overflow Dark", "Overflow High Contrast Dark", r_lines)
 
-output_r <- "./src/01_so.hc.dark_guis.R"
+output_r <- "./src/01_overflow.hc.dark_guis.R"
 
 
 
@@ -110,12 +110,12 @@ for (c in ncols) {
 
 # Rename and output
 new_tm <- gsub(
-  "dark.stackoverflow_dark",
-  "light.stackoverflow_light", new_tm
+  "dark.overflow_dark",
+  "light.overflow_light", new_tm
 )
-new_tm <- gsub("StackOverflow Dark", "StackOverflow Light", new_tm)
+new_tm <- gsub("Overflow Dark", "Overflow Light", new_tm)
 
-output_f <- gsub("StackOverflow Dark", "StackOverflow Light", input_tm)
+output_f <- gsub("Overflow Dark", "Overflow Light", input_tm)
 
 
 
@@ -124,9 +124,9 @@ writeLines(new_tm, output_f)
 
 # Create also a new R script
 r_lines <- readLines(input_r)
-new_r <- gsub("StackOverflow Dark", "StackOverflow Light", r_lines)
+new_r <- gsub("Overflow Dark", "Overflow Light", r_lines)
 
-output_r <- "./src/01_so.light_guis.R"
+output_r <- "./src/01_overflow.light_guis.R"
 
 writeLines(new_r, output_r)
 
@@ -144,12 +144,12 @@ for (c in ncols) {
 
 # Rename and output
 new_tm <- gsub(
-  "dark.stackoverflow_dark",
-  "light.stackoverflow_hc_light", new_tm
+  "dark.overflow_dark",
+  "light.overflow_hc_light", new_tm
 )
-new_tm <- gsub("StackOverflow Dark", "StackOverflow High Contrast Light", new_tm)
+new_tm <- gsub("Overflow Dark", "Overflow High Contrast Light", new_tm)
 
-output_f <- gsub("StackOverflow Dark", "StackOverflow High Contrast Light", input_tm)
+output_f <- gsub("Overflow Dark", "Overflow High Contrast Light", input_tm)
 
 
 
@@ -158,9 +158,9 @@ writeLines(new_tm, output_f)
 
 # Create also a new R script
 r_lines <- readLines(input_r)
-new_r <- gsub("StackOverflow Dark", "StackOverflow High Contrast Light", r_lines)
+new_r <- gsub("Overflow Dark", "Overflow High Contrast Light", r_lines)
 
-output_r <- "./src/01_so.hc.light_guis.R"
+output_r <- "./src/01_overflow.hc.light_guis.R"
 
 writeLines(new_r, output_r)
 
@@ -170,7 +170,7 @@ writeLines(new_r, output_r)
 # 2. CSS variants ----
 
 
-## Templates based on stackoverflow.dark -----
+## Templates based on overflow.dark -----
 
 css_templates <- list.files("./src/themes", "css$",
   full.names = TRUE
@@ -190,9 +190,9 @@ for (this_template in css_templates) {
   }
 
   # Rename and output
-  new_css <- gsub("stackoverflow.dark", "stackoverflow.hc.dark", new_css)
+  new_css <- gsub("overflow.dark", "overflow.hc.dark", new_css)
 
-  output_f <- gsub("stackoverflow.dark", "stackoverflow.hc.dark", this_template)
+  output_f <- gsub("overflow.dark", "overflow.hc.dark", this_template)
 
 
   writeLines(new_css, output_f)
@@ -213,9 +213,9 @@ for (this_template in css_templates) {
   }
 
   # Rename and output
-  new_css <- gsub("stackoverflow.dark", "stackoverflow.light", new_css)
+  new_css <- gsub("overflow.dark", "overflow.light", new_css)
 
-  output_f <- gsub("stackoverflow.dark", "stackoverflow.light", this_template)
+  output_f <- gsub("overflow.dark", "overflow.light", this_template)
 
 
   writeLines(new_css, output_f)
@@ -235,9 +235,9 @@ for (this_template in css_templates) {
   }
 
   # Rename and output
-  new_css <- gsub("stackoverflow.dark", "stackoverflow.hc.light", new_css)
+  new_css <- gsub("overflow.dark", "overflow.hc.light", new_css)
 
-  output_f <- gsub("stackoverflow.dark", "stackoverflow.hc.light", this_template)
+  output_f <- gsub("overflow.dark", "overflow.hc.light", this_template)
 
 
   writeLines(new_css, output_f)
