@@ -11,6 +11,7 @@ Available for:
 -   **TextMate/Sublime**
 -   **Pygments** (compatible with the **Jekyll** static site generator)
 -   **highlight.js**
+-   **Prism.js**
 
 ```         
 .
@@ -46,3 +47,4 @@ Available for:
 ## Overflow Light High Contrast
 
 ![Light-HC](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-light-hc.png)
+

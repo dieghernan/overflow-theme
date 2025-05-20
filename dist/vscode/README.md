@@ -60,3 +60,4 @@ following editors and syntax highlighting libraries:
 -   **TextMate/Sublime**
 -   **Pygments** (compatible with **Jekyll** static site generator)
 -   **highlight.js**
+-   **Prism.js**
