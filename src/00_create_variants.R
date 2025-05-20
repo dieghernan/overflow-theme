@@ -76,9 +76,9 @@ new_tm <- gsub(
   "dark.overflow_hc_dark", new_tm
 )
 
-new_tm <- gsub("Overflow Dark", "Overflow High Contrast Dark", new_tm)
+new_tm <- gsub("Overflow Dark", "Overflow Dark High Contrast", new_tm)
 
-output_f <- gsub("Overflow Dark", "Overflow High Contrast Dark", input_tm)
+output_f <- gsub("Overflow Dark", "Overflow Dark High Contrast", input_tm)
 
 writeLines(new_tm, output_f)
 
@@ -87,7 +87,7 @@ writeLines(new_tm, output_f)
 # Create also a new R script
 input_r <- "./src/01_overflow.dark_guis.R"
 r_lines <- readLines(input_r)
-new_r <- gsub("Overflow Dark", "Overflow High Contrast Dark", r_lines)
+new_r <- gsub("Overflow Dark", "Overflow Dark High Contrast", r_lines)
 
 output_r <- "./src/01_overflow.hc.dark_guis.R"
 
@@ -147,9 +147,9 @@ new_tm <- gsub(
   "dark.overflow_dark",
   "light.overflow_hc_light", new_tm
 )
-new_tm <- gsub("Overflow Dark", "Overflow High Contrast Light", new_tm)
+new_tm <- gsub("Overflow Dark", "Overflow Light High Contrast", new_tm)
 
-output_f <- gsub("Overflow Dark", "Overflow High Contrast Light", input_tm)
+output_f <- gsub("Overflow Dark", "Overflow Light High Contrast", input_tm)
 
 
 
@@ -158,7 +158,7 @@ writeLines(new_tm, output_f)
 
 # Create also a new R script
 r_lines <- readLines(input_r)
-new_r <- gsub("Overflow Dark", "Overflow High Contrast Light", r_lines)
+new_r <- gsub("Overflow Dark", "Overflow Light High Contrast", r_lines)
 
 output_r <- "./src/01_overflow.hc.light_guis.R"
 

@@ -4,7 +4,7 @@
 vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/dieghernan.skeletor-syntax/Skeletor%20Syntax)
 
 ![Skeletor Syntax
-Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/static/banner.png)
+Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/banner.png)
 
 A *dark* syntax theme with purple accents inspired by Skeletor from *He-Man and
 the Masters of the Universe*. This theme is based on the [PrismJS
@@ -14,7 +14,7 @@ Syntax](https://ramonmcros.com/skeletor-syntax/) created by Ramón M. Cros.
 --------------------------------------------------------------------------------
 
 ![Main
-Screenshot](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/static/screenshot.png)
+Screenshot](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot.png)
 
 --------------------------------------------------------------------------------
 

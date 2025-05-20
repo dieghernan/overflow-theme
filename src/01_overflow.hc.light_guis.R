@@ -2,7 +2,7 @@
 
 library(tidyverse)
 library(jsonlite)
-tminput <- "./dist/tmtheme/Overflow High Contrast Light.tmTheme"
+tminput <- "./dist/tmtheme/Overflow Light High Contrast.tmTheme"
 
 source("src/functions.R")
 
