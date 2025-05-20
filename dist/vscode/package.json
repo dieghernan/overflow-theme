@@ -1,7 +1,7 @@
 {
   "name": "oveflow-theme",
   "displayName": "Overflow Theme",
-  "description": "Visual Studio Code theme based on StackOverflow palette",
+  "description": "Visual Studio Code theme based on Stack Overflow palette",
   "publisher": "dieghernan",
   "license": "MIT",
   "version": "0.1.0",

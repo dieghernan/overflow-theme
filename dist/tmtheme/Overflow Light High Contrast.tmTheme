@@ -327,6 +327,6 @@
     <key>author</key>
     <string>dieghernan</string>
     <key>comment</key>
-    <string>Based on StackOverflow style v2.7.5</string>
+    <string>Based in Stack Overflow style v2.7.5</string>
   </dict>
 </plist>
