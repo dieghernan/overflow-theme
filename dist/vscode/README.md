@@ -1,43 +1,49 @@
 # Overflow Theme
 
-[![Preview in
-vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/dieghernan.skeletor-syntax/Skeletor%20Syntax)
-
 ![Overflow Theme
 Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/banner.png)
 
-A *dark* syntax theme with purple accents inspired by Skeletor from *He-Man and
-the Masters of the Universe*. This theme is based on the [PrismJS
-version](https://ramonmcros.com/skeletor-syntax/prism.html) of [Skeletor
-Syntax](https://ramonmcros.com/skeletor-syntax/) created by Ramón M. Cros.
+Dark and light syntax themes with orange accents, inspired by Stack Overflow.
 
 --------------------------------------------------------------------------------
 
-![Main
-Screenshot](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot.png)
+## Overflow Dark
+
+![Dark](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-dark.png)
+
+## Overflow Light
+
+![Light](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-light.png)
+
+## Overflow Dark High Contrast
+
+![Dark-HC](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-dark-hc.png)
+
+## Overflow Light High Contrast
+
+![Light-HC](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-light-hc.png)
 
 --------------------------------------------------------------------------------
 
 ## Installation
 
-Preferences:
-
-1.  Go to `Extensions`.
+1.  Go to the **Extensions** view.
 2.  Search for `Overflow Theme` and install it.
-3.  Go to `Color Themes` and select `Overflow Theme` as the color theme.
-    Alternatively, press `CMD + Shift + P`, type `> color theme`, and choose
-    `Overflow Theme`.
+3.  Open the **Color Themes** picker and select any of our themes:
+    -   `Overflow Dark`
+    -   `Overflow Light`
+    -   `Overflow Dark High Contrast`
+    -   `Overflow Light High Contrast`
 
-See also Overflow Theme in the [VisualStudio
-Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.skeletor-syntax).
+Alternatively, press `CMD + Shift + P`, type `> Color Theme`, and choose
+`Overflow Theme`.
 
 ## Language Support
 
-The Overflow Theme theme supports `language-*` rules and is optimized for
-various languages:
+Overflow Theme supports `language-*` rules and is optimized for:
 
 -   **HTML**
--   **CSS and SCSS**
+-   **CSS & SCSS**
 -   **JavaScript**
 -   **PHP**
 -   **Markdown**
@@ -45,16 +51,12 @@ various languages:
 
 ## Want More?
 
-The [main
-repository](https://github.com/dieghernan/overflow-theme) also
-includes **consistent versions** of this theme in the [`extras`
-folder](https://github.com/dieghernan/overflow-theme/tree/main/extras)
-folder for the following editors and syntax highlighting libraries:
+The [main repository](https://github.com/dieghernan/overflow-theme) also
+includes **consistent versions** of this theme in the [`dist`
+folder](https://github.com/dieghernan/overflow-theme/tree/main/dist) for the
+following editors and syntax highlighting libraries:
 
 -   **RStudio**
 -   **TextMate/Sublime**
 -   **Pygments** (compatible with **Jekyll** static site generator)
 -   **highlight.js**
-
-Additionally, the original PrismJS file by Ramón M. Cros is included in the
-`extras` folder for completeness.

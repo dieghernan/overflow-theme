@@ -243,4 +243,3 @@ for (this_template in css_templates) {
 
   writeLines(new_css, output_f)
 }
-

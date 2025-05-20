@@ -1,60 +1,48 @@
 # Overflow Theme
 
-[![Preview in
-vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/dieghernan.skeletor-syntax/Skeletor%20Syntax)
-
 ![Overflow Theme
 Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/banner.png)
 
-A *dark* syntax theme with purple accents inspired by Skeletor from *He-Man and
-the Masters of the Universe*. This theme is based on the [PrismJS
-version](https://ramonmcros.com/skeletor-syntax/prism.html) of [Skeletor
-Syntax](https://ramonmcros.com/skeletor-syntax/) created by Ramón M. Cros.
+Dark and light syntax themes with orange accents, inspired by Stack Overflow.
+Available for:
 
---------------------------------------------------------------------------------
-
-![Main
-Screenshot](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot.png)
-
---------------------------------------------------------------------------------
-
-## Installation
-
-Preferences:
-
-1.  Go to `Extensions`.
-2.  Search for `Overflow Theme` and install it.
-3.  Go to `Color Themes` and select `Overflow Theme` as the color theme.
-    Alternatively, press `CMD + Shift + P`, type `> color theme`, and choose
-    `Overflow Theme`.
-
-See also Overflow Theme in the [VisualStudio
-Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.skeletor-syntax).
-
-## Language Support
-
-The Overflow Theme theme supports `language-*` rules and is optimized for
-various languages:
-
--   **HTML**
--   **CSS and SCSS**
--   **JavaScript**
--   **PHP**
--   **Markdown**
--   **YAML**
-
-## Want More?
-
-The [main
-repository](https://github.com/dieghernan/overflow-theme) also
-includes **consistent versions** of this theme in the [`extras`
-folder](https://github.com/dieghernan/overflow-theme/tree/main/extras)
-folder for the following editors and syntax highlighting libraries:
-
+-   **Visual Studio Code**
 -   **RStudio**
 -   **TextMate/Sublime**
--   **Pygments** (compatible with **Jekyll** static site generator)
+-   **Pygments** (compatible with the **Jekyll** static site generator)
 -   **highlight.js**
 
-Additionally, the original PrismJS file by Ramón M. Cros is included in the
-`extras` folder for completeness.
+```         
+.
+├── .github
+├── assets
+├── dist                  // Themes folder
+│   ├── hljs              // highlight.js (*.css | *.min.css | *.scss files)
+│   ├── prismjs           // prism.js (*.css | *.min.css | *.scss files)
+│   ├── pygments          // Pygments/Jekyll (*.css | *.min.css | *.scss files)
+│   ├── rstudio           // RStudio (*.rstheme files)
+│   ├── tmtheme           // TextMate/Sublime (*.tmTheme files)
+│   └── vscode            // Visual Studio Code Extension (Marketplace)
+├── src
+│   └── build_themes.R    // Build script (R language)
+│   └── ...
+│...
+```
+
+--------------------------------------------------------------------------------
+
+## Overflow Dark
+
+![Dark](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-dark.png)
+
+## Overflow Light
+
+![Light](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-light.png)
+
+## Overflow Dark High Contrast
+
+![Dark-HC](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-dark-hc.png)
+
+## Overflow Light High Contrast
+
+![Light-HC](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/screenshot-light-hc.png)
