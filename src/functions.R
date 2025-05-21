@@ -341,6 +341,15 @@ tmtheme2vscode <- function(tminput, output) {
   names(col_l) <- colorss$name |> unlist()
   col_l <- as.list(col_l)
 
+  # If is hc then add rule
+  hc <- grepl("_hc_", ss, fixed = TRUE)
+
+  if (hc) {
+    col_l$contrastBorder <- fg
+    col_l$editor.selectionForeground <- accent
+  }
+
+
   # Blend and sort
   col_end <- modifyList(init, col_l)
 

@@ -13,4 +13,3 @@ file.path("dist", "prismjs", theme) |>
 file.path("dist", "pygments", theme) |>
   readLines() |>
   sass::sass(cache = FALSE, output = "test/test_pygments.css")
-

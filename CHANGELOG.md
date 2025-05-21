@@ -1,3 +1,10 @@
+## v0.2.1
+
+### VSCode
+
+-   Specific Workbench items for High Contrast themes included (border and
+    selection foreground).
+
 ## v0.2.0
 
 ### VSCode
