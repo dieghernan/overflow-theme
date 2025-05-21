@@ -10,7 +10,7 @@ Dark and light syntax themes with orange accents, inspired by Stack Overflow.
 Available for:
 
 -   **Visual Studio Code** (view in [Visual Studio
-    Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.oveflow-theme))
+    Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.overflow-theme))
 -   **RStudio**
 -   **TextMate/Sublime**
 -   **Pygments** (compatible with the **Jekyll** static site generator)

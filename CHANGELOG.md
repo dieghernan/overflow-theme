@@ -1,3 +1,9 @@
+## v0.2.0
+
+### VSCode
+
+-   Extension renamed.
+
 ## v0.1.0
 
 -   Update gallery banner in Visual Studio Marketplace.
