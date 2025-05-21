@@ -1,7 +1,7 @@
 # Overflow Theme
 
 [![Preview in
-vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/dieghernan.oveflow-theme/Overflow%20Light)
+vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue)](https://vscode.dev/editor/theme/dieghernan.overflow-theme/Overflow%20Light)
 
 ![Overflow Theme
 Banner](https://raw.githubusercontent.com/dieghernan/overflow-theme/main/assets/banner.png)

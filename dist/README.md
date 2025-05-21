@@ -21,7 +21,7 @@ theme](https://colorsublime.github.io/how-to-install-a-theme/).
 ## Visual Studio Code
 
 See [Visual Studio
-Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.oveflow-theme):
+Marketplace](https://marketplace.visualstudio.com/items?itemName=dieghernan.overflow-theme):
 
 1.  Go to the **Extensions** view.
 2.  Search for `Overflow Theme` and install it.
