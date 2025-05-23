@@ -1,6 +1,6 @@
 source("src/build_themes.R")
 
-theme <- "overflow.light.scss"
+theme <- "overflow.dark.scss"
 
 file.path("dist", "hljs", theme) |>
   readLines() |>

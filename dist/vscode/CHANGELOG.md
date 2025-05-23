@@ -5,6 +5,10 @@
 -   Specific Workbench items for High Contrast themes included (border and
     selection foreground).
 
+### RStudio
+
+-   Keyword highlighting added.
+
 ## v0.2.0
 
 ### VSCode

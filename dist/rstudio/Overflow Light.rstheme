@@ -2365,20 +2365,260 @@
 
 /* Generated and tested in RStudio 2025.05.0+496 ("Mariposa Orchid") */
 /* Rules from tmTheme */
+.ace_cursor {
+  color: #B75301;
+}
+
+.ace_print-margin {
+  background: #E6E6E6;
+}
+
+.ace_comment {
+  color: #666F78;
+}
+
 .ace_constant {
+  color: #B75301;
+}
+
+.ace_constant.ace_language {
+  color: #B75301;
+}
+
+.ace_constant.ace_language.ace_symbol {
   color: #567A0D;
 }
 
-.ace_cursor {
+.ace_constant.ace_numeric {
   color: #B75301;
+}
+
+.ace_constant.ace_other {
+  color: #567A0D;
+}
+
+.ace_constant.ace_other.ace_color {
+  color: #B75301;
+}
+
+.ace_constant.ace_other.ace_symbol {
+  color: #567A0D;
+}
+
+.ace_entity {
+  color: #015493;
+}
+
+.ace_entity.ace_name {
+  color: #B75301;
+}
+
+.ace_entity.ace_name.ace_type {
+  color: #B75301;
+}
+
+.ace_entity.ace_other {
+  color: #015493;
+}
+
+.ace_entity.ace_other.ace_attribute-name {
+  color: #015493;
 }
 
 .ace_heading {
   color: #015493;
 }
 
-.ace_print-margin {
-  background: #E6E6E6;
+.ace_invalid {
+  color: #9C2121;
+}
+
+.ace_keyword {
+  color: #015493;
+}
+
+.ace_keyword.ace_control {
+  color: #015493;
+}
+
+.ace_keyword.ace_operator {
+  color: #015493;
+}
+
+.ace_keyword.ace_operator.ace_expression {
+  color: #015493;
+}
+
+.ace_keyword.ace_operator.ace_new {
+  color: #015493;
+}
+
+.ace_keyword.ace_other {
+  color: #015493;
+}
+
+.ace_keyword.ace_other.ace_important {
+  color: #015493;
+}
+
+.ace_keyword.ace_other.ace_unit {
+  color: #B75301;
+}
+
+.ace_markup {
+  color: #567A0D;
+}
+
+.ace_markup.ace_bold {
+  font-weight: bold;
+}
+
+.ace_markup.ace_heading {
+  color: #015493;
+}
+
+.ace_markup.ace_href {
+  color: #567A0D;
+}
+
+.ace_markup.ace_inline {
+  color: #3B4045;
+}
+
+.ace_markup.ace_inline.ace_raw {
+  color: #3B4045;
+}
+
+.ace_markup.ace_italic {
+  font-style: italic;
+}
+
+.ace_markup.ace_link {
+  color: #567A0D;
+}
+
+.ace_markup.ace_quote {
+  color: #B75301;
+}
+
+.ace_markup.ace_raw {
+  color: #3B4045;
+}
+
+.ace_markup.ace_underline {
+  color: #567A0D;
+}
+
+.ace_markup.ace_underline.ace_link {
+  color: #567A0D;
+}
+
+.ace_meta {
+  color: #015493;
+}
+
+.ace_meta.ace_doctype {
+  color: #015493;
+}
+
+.ace_meta.ace_tag {
+  color: #B75301;
+}
+
+.ace_punctuation {
+  color: #015493;
+}
+
+.ace_punctuation.ace_section {
+  color: #015493;
+}
+
+.ace_punctuation.ace_section.ace_embedded {
+  color: #015493;
+}
+
+.ace_storage {
+  color: #015493;
+}
+
+.ace_storage.ace_modifier {
+  color: #015493;
+}
+
+.ace_storage.ace_type {
+  color: #015493;
+}
+
+.ace_storage.ace_type.ace_java {
+  color: #B75301;
+}
+
+.ace_storage.ace_type.ace_primitive {
+  color: #B75301;
+}
+
+.ace_storage.ace_type.ace_tag {
+  color: #B75301;
+}
+
+.ace_string {
+  color: #567A0D;
+}
+
+.ace_string.ace_regexp {
+  color: #567A0D;
+}
+
+.ace_support {
+  color: #015493;
+}
+
+.ace_support.ace_class {
+  color: #B75301;
+}
+
+.ace_support.ace_function {
+  color: #B75301;
+}
+
+.ace_support.ace_type {
+  color: #015493;
+}
+
+.ace_support.ace_type.ace_property-name {
+  color: #015493;
+}
+
+.ace_support.ace_variable {
+  color: #015493;
+}
+
+.ace_variable {
+  color: #567A0D;
+}
+
+.ace_variable.ace_language {
+  color: #567A0D;
+}
+
+.ace_variable.ace_other {
+  color: #567A0D;
+}
+
+.ace_variable.ace_other.ace_constant {
+  color: #567A0D;
+}
+
+.ace_variable.ace_other.ace_php {
+  color: #567A0D;
+}
+
+.ace_variable.ace_scss {
+  color: #567A0D;
+}
+
+.ace_xml-pe {
+  color: #666F78;
 }
 
 /* Source: https://github.com/dieghernan/pretty-themes */
