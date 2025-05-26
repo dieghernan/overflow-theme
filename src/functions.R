@@ -15,12 +15,18 @@ read_tmtheme <- function(input) {
       x <- trimws(x)
 
       # Guess if color and convert
-      res <- try(col2rgb(x), silent = TRUE)
+      res <- try(col2rgb(x, alpha = TRUE), silent = TRUE)
 
-      res
+
       if (!inherits(res, "try-error")) {
-        x <- rgb(t(res), maxColorValue = 255) |> toupper()
+        x <- rgb(t(res[1:3]), maxColorValue = 255) |> toupper()
+        if (res[4] < 255) {
+          aa <- res[4] / 255
+
+          x <- ggplot2::alpha(x, aa) |> toupper()
+        }
       }
+
 
 
       x <- gsub("  ", " ", x)
@@ -617,6 +623,7 @@ tmtheme2rstheme <- function(tminput, rtheme_out) {
 
   tmcols_scopes <- tmcols |>
     filter(section == "Scopes") |>
+    filter(!str_detect(scope, " ")) |>
     mutate(
       tm = coalesce(scope, name),
       fg = coalesce(foreground, value),
@@ -625,7 +632,8 @@ tmtheme2rstheme <- function(tminput, rtheme_out) {
       fontstyle = ifelse(str_detect(fontStyle, "talic"), "italic", NA)
     ) |>
     select(tm, fg, bg, fontweight, fontstyle) |>
-    arrange(tm)
+    arrange(tm) |>
+    filter(any(!is.na(fg), !is.na(bg), !is.na(fontweight), !is.na(fontstyle)))
 
   tmcols_scopes <- tmcols_scopes |>
     filter(str_detect(tm, "link")) |>
@@ -681,6 +689,8 @@ tmtheme2rstheme <- function(tminput, rtheme_out) {
   newlev2 <- lev3 |>
     mutate(new_tm = str_split_fixed(tm, fixed("."), n = 3)[1:2] |>
       paste0(collapse = ".")) |>
+    # Just the color
+    mutate(bg = NA, fontweight = NA, fontstyle = NA) |>
     group_by(new_tm) |>
     group_map(function(x, y) {
       x |>
@@ -709,8 +719,11 @@ tmtheme2rstheme <- function(tminput, rtheme_out) {
 
   lev1_vars <- str_split_fixed(lev2$tm, fixed("."), n = 2)[, 1] |>
     unlist()
+
   newlev1 <- lev2 |>
     mutate(new_tm = lev1_vars) |>
+    # Just the color
+    mutate(bg = NA, fontweight = NA, fontstyle = NA) |>
     group_by(new_tm) |>
     group_map(function(x, y) {
       x |>
@@ -745,7 +758,8 @@ tmtheme2rstheme <- function(tminput, rtheme_out) {
       rstheme = str_replace_all(tm, fixed("."), ".ace_"),
       rstheme = paste0(".ace_", rstheme)
     ) |>
-    filter(!is.na(rstheme))
+    filter(!is.na(rstheme)) |>
+    filter(any(!is.na(fg), !is.na(bg), !is.na(fontweight), !is.na(fontstyle)))
 
 
   col2add <- col2add |>
@@ -806,6 +820,7 @@ tmtheme2rstheme <- function(tminput, rtheme_out) {
   # SASS stylesheet
   compiler <- readLines("./src/_better_rstheme.scss")
 
+
   ## Build ----
 
   # Create a first compilation
@@ -825,6 +840,7 @@ tmtheme2rstheme <- function(tminput, rtheme_out) {
   )
 
   readLines(rtheme_out) %>%
+    str_replace_all(fixed("blur(1px)"), "brightness(75%)") %>%
     # New rules
     c(vtext, "", new_css) %>%
     # Compilers
